@@ -1,0 +1,47 @@
+## Lesson 46: Property Observers: Reacting to Data Changes with willSet and didSet
+
+**Property Observer** ပဵၼ် Code ဢၼ်တေႁဵတ်းၵၢၼ် ၵူႈပွၵ်ႈဢၼ်ၵႃႈၶၼ် (Value) ၶေႃ Property ၼၼ်ႉထုၵ်ႇလႅၵ်ႈလၢႆႈ။ ႁဝ်းၸၢင်ႈၸႂ်ႉမၼ်းလႆႈတင်း **Stored Properties** ၶႃႈ။
+
+Swift မီး Observers ယူႇ 2 မဵဝ်း:
+
+### 1. willSet (တေလႅၵ်ႈယဝ်ႉၼႃ)
+မၼ်းတေႁဵတ်းၵၢၼ် **ဢွၼ်တၢင်း** ဢၼ်ၵႃႈၶၼ်မႂ်ႇတေထုၵ်ႇၵဵပ်းဝႆႉ။
+*   ၸႂ်ႉ Constant **`newValue`** တွၼ်ႈတႃႇတူၺ်းၵႃႈၶၼ်ဢၼ်တေမႃးမႂ်ႇ။
+
+### 2. didSet (လႅၵ်ႈယဝ်ႉယဝ်ႉၶႃႈ)
+မၼ်းတေႁဵတ်းၵၢၼ် **ဝၢႆးလင်** ဢၼ်ၵႃႈၶၼ်မႂ်ႇထုၵ်ႇၵဵပ်းဝႆႉယဝ်ႉ။
+*   ၸႂ်ႉ Constant **`oldValue`** တွၼ်ႈတႃႇတူၺ်းၵႃႈၶၼ်ဢၼ်မီးဝႆႉမိူဝ်ႈၵဝ်ႇ။
+
+```swift
+struct KeyboardTheme {
+    var brightness: Int = 50 {
+        willSet {
+            print("တေလႅၵ်ႈသီလႅင်းပဵၼ်: \(newValue)")
+        }
+        didSet {
+            if brightness > 100 {
+                print("Error: လႅင်းၼမ်ပိုၼ်းၵႂႃႇယဝ်ႉ! ၶိုၼ်းပၼ်ပဵၼ် 100 ၶႃႈ")
+                brightness = 100 // ၸၢင်ႈမႄးၵႃႈၶၼ်ၶိုၼ်းၼႂ်း didSet
+            }
+            print("လႅၵ်ႈယဝ်ႉယဝ်ႉ။ လႅင်းမိူဝ်ႈၵဝ်ႇပဵၼ်: \(oldValue)")
+        }
+    }
+}
+
+var myTheme = KeyboardTheme()
+myTheme.brightness = 80
+```
+
+---
+
+### 3. ၵွပ်ႈသင်လူဝ်ႇၸႂ်ႉ Property Observers?
+1.  **UI Updates:** မိူဝ်ႈ Variable လႅၵ်ႈ ႁႂ်ႈၼႃႈတႃ App (UI) လႅၵ်ႈၸွမ်းၵမ်းလဵဝ်။
+2.  **Validation:** ၵူတ်ႇထတ်းၶေႃႈมูล တေႃႇပေႃးမၼ်းထုၵ်ႇလႅၵ်ႈယဝ်ႉ။
+3.  **Synchronization:** မိူဝ်ႈလႅၵ်ႈ Variable တူဝ်ၼိုင်ႈ ႁႂ်ႈမၼ်းၵႂႃႇသင်ႇ Variable ထႅင်ႈတူဝ်ၼိုင်ႈလႅၵ်ႈၸွမ်း။
+
+---
+
+### 4. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
+> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: ၸၢႆးမၢဝ်းၸၢင်ႈၸႂ်ႉ `didSet` ၵပ်း Variable `currentLanguage`။ ပေႃး User လႅၵ်ႈၽႃႇသႃႇ (မိူၼ်ၼင်ႇ လႅၵ်ႈပဵၼ် လိၵ်ႈတႆး)၊ ၼႂ်း `didSet` ၼၼ်ႉ ၸၢႆးမၢဝ်းၸၢင်ႈသင်ႇႁႂ်ႈ Keyboard ၶိုၼ်း Draw တူဝ်လိၵ်ႈ (Redraw Keys) ႁႂ်ႈပဵၼ်လိၵ်ႈတႆးတင်းသဵင်ႈ ၵမ်းလဵဝ်လႆႈယဝ်ႉၶႃႈ။"**
+
+---
