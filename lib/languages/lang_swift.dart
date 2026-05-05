@@ -74,6 +74,7 @@ const swiftModules = {
     47: "Methods: Adding Logic and Behavior to your Types",
     48: "Initializers: Safely Setting Up your Objects with init()"
   },
+  // 7: "Protocols & Extensions",
   7: {
     49: "Protocols: Defining Blueprints for Methods and Properties",
     50: "Extensions: Adding Functionality to Existing Types",
