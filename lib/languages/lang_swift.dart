@@ -85,6 +85,7 @@ const swiftModules = {
     55: "Opaque Types: Using the some Keyword (Essential for SwiftUI)",
     56: "Synthesized Implementation: How Swift Auto-conforms to Equatable and Hashable"
   },
+  // 8: "Memory Safety & Error Handling",
   8: {
     57: "Automatic Reference Counting (ARC): How Swift Manages Memory",
     58: "Strong, Weak, and Unowned: Breaking Reference Cycles",
