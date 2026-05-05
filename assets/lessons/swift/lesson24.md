@@ -35,8 +35,3 @@ func startNewAIKeyboardFeature() {
 2.  **Modernization:** ပၼ်ႁဝ်းၸႂ်ႉ Feature မႂ်ႇပိူၼ်ႈလႆႈ ၼႂ်းၶိူင်ႈဢၼ်ႁပ်ႉလႆႈ၊ သေယဝ်ႉ ယັງသိုပ်ႇပၼ် User ၶိူင်ႈၵဝ်ႇၸႂ်ႉ App ႁဝ်းလႆႈယူႇ (Backward Compatibility)။
 
 ---
-
-### 4. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
-> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: Apple တေမီးၵၢၼ်လႅၵ်ႈလၢႆႈ `KeyboardExtension` API ယူႇၵူႈပွၵ်ႈ။ ပေႃးႁဝ်းၶႂ်ႈၸႂ်ႉ 'Haptic Feedback' မဵဝ်းမႂ်ႇ ဢၼ်တိုၵ်ႉမီးၼႂ်း iOS ၼိုင်ႈ Version ၼႆ ႁဝ်းလူဝ်ႇၸႂ်ႉ `#available` ၵူတ်ႇထတ်းဢွၼ်တၢင်း ၸင်ႇသင်ႇႁႂ်ႈ Keyboard ႁဝ်းသၼ်ႇ (Vibrate) ၼၼ်ႉယဝ်ႉ။"**
-
----

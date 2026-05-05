@@ -48,8 +48,3 @@ print(currentLayout) // Output: "Namkhone"
 ```
 
 ---
-
-### 4. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
-> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: ၸႂ်ႉ `Default Parameters` တွၼ်ႈတႃႇ Layout ID (မိူၼ်ၼင်ႇ `id: Int = 0`)၊ လႄႈ ၸႂ်ႉ `inout` မိူဝ်ႈလူဝ်ႇလႅၵ်ႈလၢႆႈ Status ၶေႃ Keyboard ၵမ်းသိုဝ်ႈ ဢမ်ႇလူဝ်ႇ Return ၶေႃႈมูลမႃးမႂ်ႇၶႃႈယဝ်ႉ။"**
-
----

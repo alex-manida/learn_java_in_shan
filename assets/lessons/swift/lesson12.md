@@ -54,8 +54,3 @@ let groupedKeys = Dictionary(grouping: allKeys) { $0.first! }
 ```
 
 ---
-
-### 5. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
-> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: မိူဝ်ႈ User ၼိပ်ႉ Key ဢၼ်ဢမ်ႇမီးၼႂ်း Layout (မိူၼ်ၼင်ႇ Key Function တၢင်ႇပိူင်)၊ ႁဝ်းလူဝ်ႇၸႂ်ႉ `default: ""` တွၼ်ႈတႃႇႁႂ်ႈမၼ်းဢွၵ်ႇမႃးပဵၼ် String ဝၢင်ႇဝႆႉ တႅၼ်းလွင်ႈဢၼ်တေပၼ် App Crash ၼၼ်ႉယဝ်ႉ။"**
-
----

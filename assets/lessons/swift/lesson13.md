@@ -53,8 +53,3 @@ let different = setA.subtracting(setB)    // [1, 2]
 ```
 
 ---
-
-### 4. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
-> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: ၸႂ်ႉ Set မိူဝ်ႈလူဝ်ႇၵဵပ်း 'သဵၼ်ႈမၢႆ Key ဢၼ် User ၼိပ်ႉဝႆႉ' တွၼ်ႈတႃႇႁႄႉၵင်ႈလွင်ႈၼိပ်ႉၵူပ်ႉ (Duplicate Input) ဢမ်ႇၼၼ် ၸႂ်ႉၵဵပ်း 'Dictionary Words' တွၼ်ႈတႃႇၵူတ်ႇထတ်း Spell Check ႁႂ်ႈၽႂ်းၽၢႆပိူၼ်ႈယဝ်ႉ။"**
-
----

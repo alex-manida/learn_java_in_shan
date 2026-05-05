@@ -40,8 +40,3 @@ let firstChar = word[word.startIndex] // "တ"
 Collection Protocols ပၼ်ႁဝ်းဢၢၼ်ႇၶေႃႈมูล "လၢႆလၢႆပွၵ်ႈ" လႆႈ (Multi-pass)၊ မၼ်းဢမ်ႇမိူၼ်ၼင်ႇ Generator မၢင်မဵဝ်း ဢၼ်ဢၢၼ်ႇယဝ်ႉယဝ်ႉၵႂႃႇၶႃႈ။ မၼ်းတေၵဵပ်းၵႃႈၶၼ် Index ဝႆႉသေ ႁႂ်းႁဝ်းၶိုၼ်းမႃးႁႃတီႈၵဝ်ႇလႆႈၵူႈပွၵ်ႈယဝ်ႉ။
 
 ---
-
-### 5. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
-> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: မိူဝ်ႈႁဝ်းတႅမ်ႈ Function တွၼ်ႈတႃႇၸတ်းၵၢၼ် Keyboard Layout၊ ႁဝ်းၸၢင်ႈမၵ်းမၼ်ႈ Parameter ႁႂ်ႈပဵၼ် `Collection` တႅၼ်းဢၼ်တေမၵ်းမၼ်ႈပဵၼ် `Array`။ လၢႆးၼႆႉ တေႁဵတ်းႁႂ်ႈ Function ႁဝ်းၸႂ်ႉလႆႈတင်း Array, Set ဢမ်ႇၼၼ် Dictionary.Values ၵမ်းသိုဝ်ႈယဝ်ႉ။"**
-
----

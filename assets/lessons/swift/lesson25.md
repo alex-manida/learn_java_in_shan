@@ -63,8 +63,3 @@ let name = getLayoutName(id: 1) // name တေပဵၼ် "Namkhone"
 ```
 
 ---
-
-### 5. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
-> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: ႁဝ်းၸၢင်ႈသၢင်ႈ Function မိူၼ်ၼင်ႇ `func convertToShan(key: String) -> String`။ မၼ်းတေႁဵတ်းႁႂ်ႈ Code ႁဝ်းၸႅၵ်ႇလႅင်း။ ပေႃးလူဝ်ႇလႅၵ်ႈလၢႆႈ Logic ၵၢၼ်ပိၼ်ႇလိၵ်ႈ ႁဝ်းၵေႃႈမႃးလႅၵ်ႈတီႈ Function တီႈလဵဝ်ၵေႃႈ လႅၵ်ႈပၼ်တင်း App ယဝ်ႉ။"**
-
----

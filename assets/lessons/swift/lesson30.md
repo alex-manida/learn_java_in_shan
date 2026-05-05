@@ -43,8 +43,3 @@ let evenShorter = numbers.sorted(by: >)
 ```
 
 ---
-
-### 4. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
-> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: ႁဝ်းတေလႆႈၸႂ်ႉ Shorthand Syntax ၼႆႉၼမ်တႄႉတႄႉ မိူဝ်ႈႁဝ်းၸႂ်ႉ `filter` တွၼ်ႈတႃႇႁႃတူဝ်လိၵ်ႈၼႂ်း Dictionary။ မိူၼ်ၼင်ႇ `keys.filter { $0.hasPrefix("ၵ") }`။ မၼ်းႁဵတ်းႁႂ်ႈ Code ႁဝ်းသႅၼ်ႈသႂ် လႄႈ ၽႂ်းၽၢႆတႄႉတႄႉၶႃႈ။"**
-
----

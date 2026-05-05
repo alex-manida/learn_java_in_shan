@@ -58,8 +58,3 @@ print(incrementByTwo()) // Output: 4
 3.  **Security:** ႁႄႉၵင်ႈဢမ်ႇႁႂ်ႈ Function တၢင်ႇဢၼ် မႃးႁွင်ႉၸႂ်ႉ Logic ဢၼ်ႁဝ်းဢမ်ႇပႆႇႁႅၼ်းဝႆႉ။
 
 ---
-
-### 4. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
-> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: မိူဝ်ႈႁဝ်းမီး Function လူင် `func updateKeyboard()`၊ ႁဝ်းၸၢင်ႈတႅမ်ႈ Nested Functions မိူၼ်ၼင်ႇ `updateColors()` လႄႈ `updateLabels()` ဝႆႉၽၢႆႇၼႂ်းမၼ်း။ မၼ်းတေႁဵတ်းႁႂ်ႈ Code ႁဝ်းလူငၢႆႈ လႄႈ ၸတ်းၵၢၼ်လႆႈငၢႆႈလိူဝ်ၵဝ်ႇယဝ်ႉ။"**
-
----
