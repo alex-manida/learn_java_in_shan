@@ -1,24 +1,24 @@
 ## Lesson 9: Arrays (Part 1): Creating and Manipulating Ordered Lists
 
-**Array** မၢႆထိုင် ၵၢၼ်သိမ်းၶေႃႈมูล မဵဝ်းလဵဝ်ၵၼ် (Same Type) ႁႂ်ႈမၼ်းပဵၼ်သဵၼ်ႈမၢႆ (List) သေ မီးလွင်ႈၸႅၵ်ႇထႅဝ်ၸွမ်းၼင်ႇလຳดับ (Ordered) မၼ်းယဝ်ႉ။
+**Array** မၢႆထိုင် ၵၢၼ်သိမ်းၶေႃႈမုၼ်း မဵဝ်းလဵဝ်ၵၼ် (Same Type) ႁႂ်ႈမၼ်းပဵၼ်သဵၼ်ႈမၢႆ (List) သေ မီးလွင်ႈၸႅၵ်ႇထႅဝ်ၸွမ်းၼင်ႇ ဢၼ်လႆႈသႂ်ႇဝႆႉ (Ordered) ၼၼ်ႉယဝ်ႉ။
 
 
 
 ### 1. ၵၢၼ်သၢင်ႈ Array (Creating Arrays)
-ၼႂ်း Swift ႁဝ်းၸႂ်ႉၶွပ်ႇပဵတ်း `[]` တွၼ်ႈတႃႇမၵ်းမၼ်ႈ Array ၶႃႈ။
+ၼႂ်း Swift ႁဝ်းၸႂ်ႉၶွပ်ႇသီႇၸဵင်ႇ `[]` တွၼ်ႈတႃႇမၵ်းမၼ်ႈ Array ယဝ်ႉ။
 
 ```swift
 // 1. သၢင်ႈ Array လူၺ်ႈ Type Inference (Swift ႁူႉဝႃႈပဵၼ် [String] ႁင်းၵူၺ်း)
 let layouts = ["Standard", "Namkhone", "Panglong"]
 
-// 2. သၢင်ႈ Array ဝၢင်ႇဝႆႉ (Empty Array) ဢၼ်မၵ်းမၼ်ႈ Type ဝႆႉ
+// 2. သၢင်ႈ Array ပဝ်ႇ (Empty Array) ဢၼ်မၵ်းမၼ်ႈ Type ဝႆႉ
 var selectedKeys: [String] = []
 var counts = [Int]() // လၢႆးတႅမ်ႈထႅင်ႈမဵဝ်းၼိုင်ႈ
 ```
 
 ---
 
-### 2. ၵၢၼ်သိုပ်ႇထိုင်ၶေႃႈมูล (Accessing Elements)
+### 2. ၵၢၼ်ဢဝ်ၸႂ်ႉၶေႃႈမုၼ်း (Accessing Elements)
 Array တေတႄႇဢၢၼ်ႇမၢႆ (Index) တီႈ **0** ၵူႈပွၵ်ႈၶႃႈ။
 
 ```swift
@@ -34,9 +34,9 @@ print(keyboards[1]) // ဢွၵ်ႇမႃး "Standard"
 ### 3. ၵၢၼ်ထႅမ်လႄႈၵၢၼ်လႅၵ်ႈလၢႆႈ (Modifying Arrays)
 တွၼ်ႈတႃႇလႅၵ်ႈလၢႆႈလႆႈၼၼ်ႉ Array လူဝ်ႇလႆႈပဵၼ် `var` (Mutable) ၵူၺ်းၶႃႈ။
 
-*   **`.append()`**: ထႅမ်ၶေႃႈมูล မႂ်ႇသႂ်ႇၽၢႆႇလင်သုတ်း။
-*   **`.insert(at:)`**: သႂ်ႇၶေႃႈมูล တီႈမၢႆ (Index) ဢၼ်ႁဝ်းၶႂ်ႈလႆႈ။
-*   **`+=`**: ဢဝ် Array သွင်ဢၼ်မႃးပၢပ်ႉၸူးၵၼ်။
+*   **`.append()`**: ထႅမ်ၶေႃႈမုၼ်းမႂ်ႇ သႂ်ႇၽၢႆႇလင်သုတ်း။
+*   **`.insert(at:)`**: သႂ်ႇၶေႃႈမုၼ်း တီႈမၢႆ (Index) ဢၼ်ႁဝ်းၶႂ်ႈလႆႈ။
+*   **`+=`**: ဢဝ် Array သွင်ဢၼ် မႃးႁူမ်ႈၵၼ်။
 
 ```swift
 var myLetters = ["ၵ", "ၶ"]
@@ -61,8 +61,8 @@ let removedStudent = students.remove(at: 1) // "Mao" တေထုၵ်ႇဢဝ
 
 ### 5. Properties ဢၼ်လွင်ႈယႂ်ႇ
 *   **`.count`**: ဢၢၼ်ႇတူဝ်ၼမ်ၼႂ်း Array။
-*   **`.isEmpty`**: ၵူတ်ႇထတ်းဝႃႈ Array ဝၢင်ႇဝႆႉႁႃႉ။
-*   **`.contains()`**: ၵူတ်ႇထတ်းဝႃႈ မီးၶေႃႈมูล ဢၼ်ႁဝ်းႁႃၼၼ်ႉယူႇၼႂ်း Array ႁႃႉ။
+*   **`.isEmpty`**: ၵူတ်ႇထတ်းဝႃႈ Array ပဝ်ႇဝႆႉႁႃႉ၊ ၼႂ်းမၼ်း ဢမ်ႇမီးသင်ႁႃႉ။
+*   **`.contains()`**: ၵူတ်ႇထတ်းဝႃႈ မီးၶေႃႈမုၼ်း ဢၼ်ႁဝ်းႁႃၼၼ်ႉယူႇၼႂ်း Array ႁႃႉ။
 
 ```swift
 let layoutNames = ["Standard", "Namkhone"]
