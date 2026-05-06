@@ -27,7 +27,7 @@
 
 ---
 
-### **Summary (သူးပ်းႁူဝ်တွၼ်ႈႁဵၼ်း)**
+### **Summary**
 
 | Component | Explanation (Shan) |
 | :--- | :--- |

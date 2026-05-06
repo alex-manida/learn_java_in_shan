@@ -73,7 +73,7 @@ struct Lesson5View: View {
 }
 ```
 
-### **Summary (သူးပ်းႁူဝ်တွၼ်ႈႁဵၼ်း)**
+### **Summary**
 
 | Topic | Explanation (Shan) |
 | :--- | :--- |
