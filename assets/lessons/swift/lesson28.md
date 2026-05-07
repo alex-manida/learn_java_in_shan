@@ -1,9 +1,10 @@
 ## Lesson 28: Nested Functions and Scope Management
 
-ၼႂ်း Swift ႁဝ်းၸၢင်ႈတႅမ်ႈ **Function သႂ်ႇၼႂ်း Function** (Nested Functions) လႆႈၶႃႈ။ လၢႆးၼႆႉတေၸွႆးႁႂ်ႈႁဝ်း "သိမ်း" (Hide) Logic မၢင်ပိူင် ဢၼ်ႁဝ်းဢမ်ႇၶႂ်ႈႁႂ်ႈၵူၼ်းၽၢႆႇၼွၵ်ႈႁၼ် ဢမ်ႇၼၼ် ဢမ်ႇၶႂ်ႈႁႂ်ႈမၼ်းၵႂႃႇယုင်ႈၸူး Code တၢင်ႇတီႈၼၼ်ႉယဝ်ႉ။
+ၼႂ်း Swift ႁဝ်းၸၢင်ႈတႅမ်ႈ **Function သႂ်ႇၼႂ်း Function** (Nested Functions) လႆႈယဝ်ႉ။
+လၢႆးၼႆႉတေၸွႆးႁႂ်ႈႁဝ်း "သိမ်း" (Hide) Logic မၢင်ပိူင် ဢၼ်ႁဝ်းဢမ်ႇၶႂ်ႈႁႂ်ႈၵူၼ်းၽၢႆႇၼွၵ်ႈႁၼ် ဢမ်ႇၼၼ် ဢမ်ႇၶႂ်ႈႁႂ်ႈမၼ်းၵႂႃႇယုင်ႈၸူး Code တၢင်ႇတီႈၼၼ်ႉယဝ်ႉ။
 
 ### 1. ၵၢၼ်သၢင်ႈ Nested Function
-Function တူဝ်ဢၼ်ယူႇၽၢႆႇၼႂ်းၼၼ်ႉ တေၸၢင်ႈၸႂ်ႉလႆႈ (Accessed) ယူႇၼႂ်း Scope ၶေႃ Function တူဝ်ၽၢႆႇၼွၵ်ႈမၼ်းၵူၺ်းၶႃႈ။
+Function တူဝ်ဢၼ်ယူႇၽၢႆႇၼႂ်းၼၼ်ႉ တေၸၢင်ႈၸႂ်ႉလႆႈ (Accessed) Scope ၶေႃ Function တူဝ်ၼွၵ်ႈယဝ်ႉ။
 
 ```swift
 func keyboardSetup() {
@@ -22,13 +23,14 @@ func keyboardSetup() {
 }
 
 keyboardSetup()
-// loadKeys() // Error: ႁွင်ႉတီႈၼႆႉဢမ်ႇလႆႈ ၵွပ်ႈမၼ်းယူႇၼႂ်း Scope keyboardSetup
+// loadKeys() // Error: ႁွင်ႉတီႈၼႆႉဢမ်ႇလႆႈ ၵွပ်ႈမၼ်းယူႇၼႂ်း Scope keyboardSetup ဝႆႉၵူၺ်း။
 ```
 
 ---
 
 ### 2. Scope Management (ၵၢၼ်ၵုမ်းထိင်း Scope)
-Nested Function မီးၼမ်ႉၵတ်ႉထႅင်ႈပိူင်ၼိုင်ႈ ပဵၼ်လွင်ႈ **Capturing Values**။ မၼ်းၸၢင်ႈၸႂ်ႉ Variable ဢၼ်မၵ်းမၼ်ႈဝႆႉၼႂ်း Function တူဝ်ၽၢႆႇၼွၵ်ႈမၼ်းလႆႈ ၵမ်းသိုဝ်ႈၶႃႈ။
+Nested Function မီးၼမ်ႉၵတ်ႉထႅင်ႈပိူင်ၼိုင်ႈ ပဵၼ်လွင်ႈ **Capturing Values** ယဝ်ႉ။
+မၼ်းၸၢင်ႈၸႂ်ႉ Variable ဢၼ်မၵ်းမၼ်ႈဝႆႉၼႂ်း Function တူဝ်ၽၢႆႇၼွၵ်ႈမၼ်းလႆႈ ၵမ်းသိုဝ်ႈယဝ်ႉ။
 
 
 

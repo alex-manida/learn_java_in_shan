@@ -1,18 +1,20 @@
 ## Lesson 32: Escaping vs. Non-Escaping Closures (Critical for Concurrency)
 
-ၼႂ်း Swift ၼႆႉ Closure မီး 2 မဵဝ်း ၸွမ်းၼင်ႇ "ၸူဝ်ႈပၢၼ်" (Lifecycle) မၼ်းၶႃႈ။ ဢၼ်ၼႆႉလွင်ႈယႂ်ႇတႄႉတႄႉ မိူဝ်ႈႁဝ်းလူဝ်ႇသူင်ႇၶေႃႈมูลၵႂႃႇၼႂ်း Internet ဢမ်ႇၼၼ် ႁဵတ်းၵၢၼ်ဢၼ်ယၢဝ်းယၢဝ်းယဝ်ႉ။
+ၼႂ်း Swift ၼႆႉ Closure မီး 2 မဵဝ်း ၸွမ်းၼင်ႇ "ၸူဝ်ႈပၢၼ်" (Lifecycle) မၼ်းယဝ်ႉ။ 
+ဢၼ်ၼႆႉ လွင်ႈယႂ်ႇတႄႉတႄႉ မိူဝ်ႈႁဝ်းလူဝ်ႇသူင်ႇၶေႃႈမုၼ်းၵႂႃႇၼႂ်း Internet ဢမ်ႇၼၼ် ႁဵတ်းၵၢၼ်ဢၼ်ယၢဝ်းယၢဝ်းယဝ်ႉ။
 
 ### 1. Non-Escaping Closures (Default)
-ပိုၼ်ႉထၢၼ်မၼ်း Closure ၵူႈဢၼ်ပဵၼ် **Non-escaping**။ မၢႆထိုင်ဝႃႈ:
+ပိုၼ်ႉထၢၼ်မၼ်း Closure ၵူႈဢၼ်ပဵၼ် **Non-escaping** ယဝ်ႉ။ မၢႆထိုင်ဝႃႈ:
 *   Closure ၼၼ်ႉ တေႁဵတ်းၵၢၼ် "ၼႂ်း" Function ၼၼ်ႉၵူၺ်း။
-*   မိူဝ်ႈ Function ၼၼ်ႉႁဵတ်းၵၢၼ်ယဝ်ႉတူဝ်ႈ (Return) ၵႂႃႇ၊ Closure ၵေႃႈတေ "တၢႆ" ၸွမ်းၵႂႃႇၵမ်းလဵဝ်။
-*   မၼ်းဢမ်ႇလူဝ်ႇၸႂ်ႉ Memory ၼမ် ၵွပ်ႈ Swift ႁူႉဝႃႈမၼ်းတေဢမ်ႇယူႇယၢဝ်းၶႃႈ။
+*   မိူဝ်ႈ Function ၼၼ်ႉႁဵတ်းၵၢၼ်ယဝ်ႉတူဝ်ႈ (Return) ၵႂႃႇၼၼ်ႉ Closure ၵေႃႈတေ "တၢႆ" ၸွမ်းၵႂႃႇၵမ်းလဵဝ်ယဝ်ႉ။
+*   မၼ်းဢမ်ႇလူဝ်ႇၸႂ်ႉ Memory ၼမ် ၵွပ်ႈ Swift ႁူႉဝႃႈမၼ်းတေဢမ်ႇယူႇယၢဝ်းယဝ်ႉ။
 
 ### 2. Escaping Closures (`@escaping`)
-**Escaping Closure** ပဵၼ် Closure ဢၼ် "လွတ်ႈ" (Escape) ဢွၵ်ႇၵႂႃႇၼွၵ်ႈ Function။ မၼ်းတေ **သိုပ်ႇမီးသၢႆၸႂ်ယူႇ** ဢမ်ႇဝႃႈ Function တူဝ်ဢၼ်သၢင်ႈမၼ်းမႃးၼၼ်ႉ တေႁဵတ်းၵၢၼ်ယဝ်ႉၵႂႃႇယဝ်ႉၵေႃႈယႃႇ။
+**Escaping Closure** ပဵၼ် Closure ဢၼ် "လွတ်ႈ" (Escape) ဢွၵ်ႇၵႂႃႇၼွၵ်ႈ Function ယဝ်ႉ။ 
+မၼ်းတေ **သိုပ်ႇမီးသၢႆၸႂ်ယူႇ** ဢမ်ႇဝႃႈ Function တူဝ်ဢၼ်သၢင်ႈမၼ်းမႃးၼၼ်ႉ တေႁဵတ်းၵၢၼ်ယဝ်ႉၵႂႃႇယဝ်ႉၵေႃႈယႃႇ။
 
 ႁဝ်းလူဝ်ႇၸႂ်ႉ `@escaping` မိူဝ်ႈ:
-1.  **Asynchronous Work:** မိူဝ်ႈလူဝ်ႇပႂ်ႉၶေႃႈมูล (မိူၼ်ၼင်ႇ Download လိၵ်ႈတႆးၼႂ်း Server)။
+1.  **Asynchronous Work:** မိူဝ်ႈလူဝ်ႇပႂ်ႉၶေႃႈမုၼ်း (မိူၼ်ၼင်ႇ Download လိၵ်ႈတႆးၼႂ်း Server)။
 2.  **Storage:** မိူဝ်ႈႁဝ်းဢဝ် Closure ၵႂႃႇၵဵပ်းဝႆႉၼႂ်း Variable ၽၢႆႇၼွၵ်ႈ။
 
 ```swift
@@ -26,7 +28,7 @@ func addToQueue(handler: @escaping () -> Void) {
 func downloadData(completion: @escaping (String) -> Void) {
     // ႁဵတ်းၵၢၼ်ၼႂ်း Background Thread (လူဝ်ႇပႂ်ႉၶၢဝ်းယၢမ်း)
     DispatchQueue.global().async {
-        let data = "ၶေႃႈมูลမႃးယဝ်ႉၶႃႈ"
+        let data = "ၶေႃႈမုၼ်းမႃးယဝ်ႉၶႃႈ"
         completion(data) // Closure ႁဵတ်းၵၢၼ် ဝၢႆးလင် Function return ၵႂႃႇယဝ်ႉ
     }
 }
@@ -37,11 +39,8 @@ func downloadData(completion: @escaping (String) -> Void) {
 ---
 
 ### 3. လွင်ႈသတိ: Strong Reference Cycles
-မိူဝ်ႈႁဝ်းၸႂ်ႉ `@escaping` ၼႂ်း Class၊ ႁဝ်းလူဝ်ႇသတိလွင်ႈ **`self`** ၶႃႈ။ ၵွပ်ႈဝႃႈ Closure တေ "ၵိုတ်း" (Capture) `self` ဝႆႉ၊ မၼ်းၸၢင်ႈႁဵတ်းႁႂ်ႈ Memory တဵမ် (Memory Leak)။ ႁဝ်းတေလႆႈၸႂ်ႉ `[weak self]` တွၼ်ႈတႃႇႁႄႉၵင်ႈၶႃႈ (ႁဝ်းတေႁဵတ်း Lesson တၢင်ႇဢၼ်တွၼ်ႈတႃႇလွင်ႈၼႆႉ)။
-
----
-
-### 4. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
-> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: မိူဝ်ႈႁဝ်းလူဝ်ႇႁွင်ႉ API တွၼ်ႈတႃႇ 'Check Update' ၶေႃ Keyboard ႁဝ်း၊ ႁဝ်းတေလႆႈၸႂ်ႉ `@escaping` closure တွၼ်ႈတႃႇႁပ်ႉၶေႃႈมูลမိူဝ်ႈမၼ်း Download ယဝ်ႉ။ ပေႃးဢမ်ႇသႂ်ႇ `@escaping` ၼႆ Swift တေဢမ်ႇပၼ် Compile ၶႃႈယဝ်ႉ။"**
+မိူဝ်ႈႁဝ်းၸႂ်ႉ `@escaping` ၼႂ်း Class ၼၼ်ႉ ႁဝ်းလူဝ်ႇသတိလွင်ႈ **`self`** ယဝ်ႉ။
+ၵွပ်ႈဝႃႈ Closure တေ "ၵိုတ်း" (Capture) `self` ဝႆႉလႄႈ မၼ်းၸၢင်ႈႁဵတ်းႁႂ်ႈ Memory တဵမ် (Memory Leak) ယဝ်ႉ။
+ႁဝ်းတေလႆႈၸႂ်ႉ `[weak self]` တွၼ်ႈတႃႇႁႄႉၵင်ႈ လွင်ႈၼႆႉယဝ်ႉ (ႁဝ်းတေႁဵတ်း Lesson တၢင်ႇဢၼ်တွၼ်ႈတႃႇလွင်ႈၼႆႉ)။
 
 ---
