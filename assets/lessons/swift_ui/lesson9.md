@@ -1,4 +1,4 @@
-## **Module 2 | Lesson 1: Introduction to Property Wrappers: Why @State?**
+## **Module 2 | Lesson 9: Introduction to Property Wrappers: Why @State?**
 
 ### **1. ပၼ်ႁႃၶွင် Struct (The Limitation of Structs)**
 ၼႂ်း Lesson 1 ႁဝ်းႁူႉယဝ်ႉဝႃႈ SwiftUI View ပဵၼ် **Struct**။ ၼႂ်းၽႃႇသႃႇ Swift ၼၼ်ႉ Struct မၼ်းပဵၼ် "Value Type" ဢၼ်လႅၵ်ႈလၢႆႊဢမ်ႇလႆႈ (Immutable) ယဝ်ႉ။
