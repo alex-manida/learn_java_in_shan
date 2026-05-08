@@ -43,6 +43,7 @@ const Map<int, Map<int, String>> swiftUiModules = {
     23: "Searchable Interfaces: Adding the .searchable() Modifier",
     24: "Project 3: Programming Course Catalog & Resource Library",
   },
+  // 4: "Adaptive Layouts & Grids",
   4: {
     25: "LazyVGrid and LazyHGrid: Creating Responsive Grids",
     26: "ScrollView Mastery: Horizontal and Vertical Scrolling",
