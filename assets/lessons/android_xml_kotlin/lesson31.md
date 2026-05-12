@@ -66,4 +66,4 @@ binding.recyclerView.adapter = adapter
 
 'ယႃႇလိုမ်းသႂ်ႇ Ripple Effect (Lesson 15) ပၼ် Item ၶွင်ၸဝ်ႈၵဝ်ႇၼႃၶႃႈ!' 
 သင် Item တဵၵ်းလႆႈ ၵူၺ်းၵႃႈ ဢမ်ႇမီးသီလႅၵ်ႈလၢႆႈသင် (Visual Feedback) ၼႆ ၵူၼ်းၸႂ်ႉတေဝူၼ်ႉဝႃႈ App ႁဝ်းၵိုတ်း (Frozen) ဝႆႉၼႆဢေႃႈ။
-ၸႂ်ႉ `android:background="?attr/selectableItemBackground"` ၼႂ်း XML Item ႁႂ်ႈမၼ်းတူၺ်း ၶႅမ်ႉလိူဝ်မႃးၶႃႈ!"
+ၸႂ်ႉ `android:background="?attr/selectableItemBackground"` ၼႂ်း XML Item ႁႂ်ႈမၼ်းတူၺ်း ၶႅမ်ႉလိူဝ်မႃးၶႃႈ!
