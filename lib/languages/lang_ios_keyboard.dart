@@ -16,5 +16,15 @@ const iosKeyboardModules = {
     6: "The \"Next Keyboard\" Protocol",
     7: "Privacy & Request Open Access",
     8: "Designing the Container App"
+  },
+  2: {
+    9: "Defining the Keyboard State (Enum & ViewModel)",
+    10: "Designing the Modular Key Component",
+    11: "The Row-Based Layout Architecture",
+    12: "Persistent Layout Memory",
+    13: "Lesson 5: The Space Bar Language Switcher",
+    14: "Dynamic Height Management",
+    15: "Shift & Symbols Logic",
+    16: "Layout Preview & Debugging"
   }
 };
