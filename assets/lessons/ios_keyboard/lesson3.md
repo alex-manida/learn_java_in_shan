@@ -15,7 +15,7 @@
 
 1. ၼိၵ်ႉသွင်ၼိဝ်ႉ (Right-click) တီႈ Folder **TMKKeyboardExtension**။
 2. လိူၵ်ႈ **New File...** သေလိူၵ်ႈ **SwiftUI View**။
-3. သႂ်ႇၸိုဝ်ႈဝႃႈ `KeyboardViewModel.swift` (ဢမ်ႇၼၼ် `KeyboardHexView.swift`)။
+3. သႂ်ႇၸိုဝ်ႈဝႃႈ `KeyboardViewModel.swift`။
 4. တႅမ်ႈ Code ပွတ်းပွတ်း တႃႇ Test တူၺ်း:
 5. 
 ```swift
@@ -118,12 +118,3 @@ class KeyboardViewController: UIInputViewController {
 * လွင်ႈႁဵတ်း Buttons ႁႂ်ႈမၼ်းတဵမ်ၵူႈ Screen (iPhone ဢွၼ်ႇ/ယႂ်ႇ) ၼၼ်ႉ SwiftUI ႁဵတ်းပၼ်လႆႈဝႆးလိူဝ် UIKit ယဝ်ႉ။
 
 ---
-
-**Summary ပုၼ်ႈတႃႇ Lesson 3:**
-ယၢမ်းလဵဝ် ၸဝ်ႈၵဝ်ႇလႆႈႁူႉလၢႆးသိုပ်ႇ (Bridge) တင်းသွင်လုၵ်ႈလႅၼ်ႇယဝ်ႉ။ ပေႃးၸဝ်ႈၵဝ်ႇ Run Code ၼႆႉ၊ တီႈၼႂ်း Keyboard ၸဝ်ႈၵဝ်ႇၼၼ်ႉ မၼ်းတေဢမ်ႇၼႄ Default Button ဢၼ် Xcode ပၼ်မႃးယဝ်ႉ၊ မၼ်းတေၼႄတူဝ် "ၵ, ၶ" ဢၼ်ႁဝ်းတႅမ်ႈဝႆႉၼႂ်း SwiftUI ၼၼ်ႉယဝ်ႉ။
-
-**Lesson 4 ၼၼ်ႉ ႁဝ်းတေမႃးလၢတ်ႈလွင်ႈ Memory ဢၼ်ပဵၼ်လွင်ႈယႂ်ႇသုတ်း (50MB Limit) ၼၼ်ႉယဝ်ႉ။ ၸွင်ႉ Code SwiftUI ၸဝ်ႈၵဝ်ႇ ပေါ်မႃးၼႂ်း Keyboard ယဝ်ႉႁိုဝ်ၶႃႈ?**
-
-```
-
-```

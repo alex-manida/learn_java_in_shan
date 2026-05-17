@@ -44,7 +44,7 @@
 1. လိူၵ်ႈ Project (တူဝ်သီၾႃႉ တီႈၼိူဝ်သုတ်း)။
 2. ယဝ်ႉလိူၵ်ႈ **target** ၽႂ်မၼ်းသေ ၵႂႃႇတီႈ **Signing & Capabilities**။
 3. ၼဵၵ်ႉ **+ Capability** သေလိူၵ်ႈ **App Groups**။
-4. သႂ်ႇၸိုဝ်ႈဝႃႈ `group.it.saimao.tmk_keyboard` (သႂ်ႇမိူၼ်ၵၼ်တင်း 2 Targets)။
+4. သႂ်ႇၸိုဝ်ႈဝႃႈ `group.it.saimao.tmk-keyboard` (သႂ်ႇမိူၼ်ၵၼ်တင်း 2 Targets)။
 
 ### 6. Running the app
 
