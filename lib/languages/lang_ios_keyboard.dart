@@ -31,10 +31,13 @@ const iosKeyboardModules = {
   3: {
     18: "Building Custom Keyboard Themes - Part 1 (Core Architecture & System Dark Mode)",
     19: "Building Custom Keyboard Themes - Part 2 (Implementing the 10-Theme Palette)",
-    20: "Keys Long-Press Popups (Shift Alternate Characters Display)",
-    21: "Smart Font Converter Engine on Enter Key Long-Press",
-    22: "Advanced Gesture Interaction (Swipe to Move Cursor / Trackpad Mode)",
-    23: "Voice Input Engine Integration (Speech-to-Text for Myanmar & English)",
-    24: "High-Performance Word Suggestions (Text-File Word Matching)"
+    20: "Building Custom Keyboard Themes - Part 3 (UI Preference Integration)",
+    21: "Standard Key Press Preview Overlay (Instant Visual Feedback on Tap)",
+    22: "Keys Long-Press Popups - Part 1 (Alternate Character Extraction Matrix)",
+    23: "Keys Long-Press Popups - Part 2 (Horizontal Slide & Selection Calculation)",
+    24: "Smart Font Converter Engine on Enter Key Long-Press",
+    25: "Advanced Gesture Interaction (Swipe to Move Cursor / Trackpad Mode)",
+    26: "Voice Input Engine Integration (Speech-to-Text for Myanmar & English)",
+    27: "High-Performance Word Suggestions (Text-File Word Matching)"
   }
 };
