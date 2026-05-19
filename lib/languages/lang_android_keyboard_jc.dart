@@ -21,11 +21,10 @@ const akjcModules = {
     8: "Building the Reusable Key Component",
     9: "Managing Keyboard Rows and Grid Structures",
     10: "Architectural Layout of the English QWERTY",
-    11: "Designing the Myanmar Unicode Layout (Visual Order vs Typing Order)",
-    12: "Designing the Shan Unicode Layout (Shift and Extra Key State)",
+    11: "Designing the Myanmar Unicode Layout",
+    12: "Designing the Shan Unicode Layout",
     13: "Implementing the Handwriting Engine for Shan",
     14: "Implementing the Handwriting Engine for Myanmar",
-    15: "Dynamic Theme Switching (MaterialTheme Implementation)",
-    16: "Displaying Custom Shan/Myanmar Typography on Keys"
+    15: "Displaying Custom Shan/Myanmar Typography on Keys"
   }
 };
