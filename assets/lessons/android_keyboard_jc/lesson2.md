@@ -42,13 +42,13 @@
 ၼႂ်းတွၼ်ႈလိၵ်ႈၼႆႉ ႁဝ်းတေတႅမ်ႈ Code (Skeleton Code) ဢၼ်ပဵၼ် ပိုၼ်ႉထၢၼ်မၼ်းယဝ်ႉ:
 
 ```kotlin
-package com.tmk.keyboard
+package it.saimao.tmkkeyboardpro
 
 import android.inputmethodservice.InputMethodService
 import android.view.View
 import android.view.inputmethod.EditorInfo
 
-class MyComposeKeyboardService : InputMethodService() {
+class MaoKeyboardService : InputMethodService() {
 
     override fun onCreate() {
         super.onCreate()
@@ -58,12 +58,12 @@ class MyComposeKeyboardService : InputMethodService() {
     override fun onCreateInputView(): View {
         // 2. ပိုၼ်ႉတီႈ တႃႇ Inflate Device View (Jetpack Compose)
         // (ႁဝ်းတေမႃးထႅမ် Code Compose View ၼႂ်း Lesson ထႅင်ႈဢၼ်ၼိုင်ႈ)
-        return super.onCreateInputView() 
+        return super.onCreateInputView()
     }
 
     override fun onStartInput(attribute: EditorInfo?, restarting: Boolean) {
         super.onStartInput(attribute, restarting)
-        // 3. တူၺ်း သႅၼ်း Input Field (Email, Password, Text, etc.)
+        // 3. ၵၢၼ်တူၺ်း သႅၼ်း Input Field (Email, Password, Text, etc.)
         when (attribute?.inputType) {
             EditorInfo.TYPE_CLASS_NUMBER -> {
                 // သင်ပဵၼ် Layout တူဝ်ၼပ်ႉ
