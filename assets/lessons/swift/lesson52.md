@@ -1,18 +1,19 @@
 ## Lesson 52: Delegation Pattern: How Objects Communicate Safely
 
-**Delegation** မၢႆထိုင် "ၵၢၼ်မွပ်ႈဢၢပ်ႈၼႃႈတီႈ"။ မၼ်းပဵၼ် Design Pattern ဢၼ်ပၼ်လုၵ်ႉပၼ် Object တူဝ်ၼိုင်ႈ (The Boss) သူင်ႇၵၢၼ် ဢမ်ႇၼၼ် သူင်ႇၶေႃႈมูล ၵႂႃႇႁႂ်ႈထႅင်ႈ Object တူဝ်ၼိုင်ႈ (The Helper) ႁဵတ်းပၼ်ၶႃႈ။
+**Delegation** မၢႆထိုင် "ၵၢၼ်မွပ်ႈဢၢပ်ႈၼႃႈတီႈ" ၼႆယဝ်ႉ။ မၼ်းပဵၼ် Design Pattern ဢၼ်ပၼ်ႁႂ်ႈ Object တူဝ်ၼိုင်ႈ (The Boss) 
+သူင်ႇၵၢၼ် ဢမ်ႇၼၼ် သူင်ႇၶေႃႈမုၼ်း ၵႂႃႇပၼ် Object ထႅင်ႈတူဝ်ၼိုင်ႈ (The Helper) တႃႇႁႂ်ႈမၼ်း ႁဵတ်းပၼ်ၼႆယဝ်ႉ။
 
 
 
 ### 1. လၢႆးႁဵတ်းၵၢၼ် (How it works)
-ႁဝ်းၸႂ်ႉ **Protocol** ပဵၼ်တူဝ်ၵၢင် တွၼ်ႈတႃႇမၵ်းမၼ်ႈဝႃႈ "Helper တေလႆႈႁဵတ်းသင်ပၼ်လႆႈလၢႆလၢႆ"။
+ႁဝ်းၸႂ်ႉ **Protocol** ပဵၼ်တူဝ်ၵၢင် တွၼ်ႈတႃႇမၵ်းမၼ်ႈဝႃႈ "Helper တေလႆႈႁဵတ်းသင်ပၼ်လၢႆလၢႆ" ၼႆယဝ်ႉ။
 
 1.  **Protocol:** မၵ်းမၼ်ႈၼႃႈတီႈ။
 2.  **Delegating Object (The Boss):** မီး Variable ဢၼ်ၵဵပ်း `delegate` ဝႆႉ။
-3.  **Delegate Object (The Helper):** ႁဵတ်းၸွမ်း Protocol သေ ႁဵတ်းၵၢၼ်တႄႇတႄႉ။
+3.  **Delegate Object (The Helper):** ႁဵတ်းၸွမ်း Protocol သေ ႁဵတ်းၵၢၼ်တူဝ်တေႉ။
 
 ### 2. တူဝ်ယၢင်ႇ (Real-world Example)
-ဝူၼ်ႉတူၺ်း Keyboard ႁဝ်း၊ မိူဝ်ႈ User ၼိပ်ႉ Key၊ Keyboard တေလႆႈလၢတ်ႈၼႄ App ဝႃႈ "User ၼိပ်ႉယဝ်ႉၼႃ"။
+ဝူၼ်ႉတူၺ်း Keyboard ႁဝ်းဝႃႈ မိူဝ်ႈ User ၼဵၵ်း Key ၼၼ်ႉ Keyboard တေလႆႈလၢတ်ႈၼႄ App ဝႃႈ "User ၼိဵၵ်းယဝ်ႉၼႃ" ၼႆယဝ်ႉ။
 
 ```swift
 // 1. မၵ်းမၼ်ႈ Protocol
@@ -42,13 +43,8 @@ class AppViewController: KeyboardDelegate {
 ---
 
 ### 3. ၵွပ်ႈသင်လူဝ်ႇၸႂ်ႉ Delegation?
-1.  **Loose Coupling:** Object တူဝ်ၼိုင်ႈ ဢမ်ႇလူဝ်ႇႁူႉလွင်ႈတူဝ်ၼိုင်ႈၼမ်ပိုၼ်းၵႂႃႇ။ ႁူႉၵူၺ်းဝႃႈမၼ်းႁဵတ်းၸွမ်း Protocol ၵေႃႈယဝ်ႉယဝ်ႉ။
-2.  **Flexibility:** ႁဝ်းၸၢင်ႈလႅၵ်ႈလၢႆႈ "Helper" (Delegate) လႆႈၵူႈၶၢဝ်း လူၺ်ႈဢမ်ႇလူဝ်ႇမႄး Code ၼႂ်း "Boss" (Engine)။
-3.  **Safety:** ၸွႆးႁႂ်ႈၵၢၼ်သူင်ႇၶေႃႈมูล ပဵၼ်ပၵ်းပဝ်း လႄႈ ၵူတ်ႇထတ်း Error လႆႈငၢႆႈ။
-
----
-
-### 4. ၵၢၼ်ၸႂ်ႉတိုဝ်းတႄႉ (Best Practice)
-> **"တွၼ်ႈတႃႇ ၸၢႆးမၢဝ်း ႁဵတ်း Keyboard ၼၼ်ႉ: Delegation ပဵၼ်လၢႆးဢၼ်လီသုတ်း တွၼ်ႈတႃႇႁႂ်ႈ 'Keyboard View' (ဢၼ် User ႁၼ်) သူင်ႇၶေႃႈมูลၵႂႃႇၸူး 'Input Controller' (ဢၼ်သူင်ႇလိၵ်ႈၶဝ်ႈ App)။ ၸၢႆးမၢဝ်းတေလႆႈၸႂ်ႉလၢႆးၼႆႉ ၼႂ်းၵၢၼ်တႅမ်ႈ iOS Keyboard Extension တႄႇတႄႉၶႃႈယဝ်ႉ။"**
+1.  **Loose Coupling:** Object တူဝ်ၼိုင်ႈ ဢမ်ႇလူဝ်ႇႁူႉလွင်ႈ Object ထႅင်ႈတူဝ်ၼိုင်ႈလႄႈ လူဝ်ႇႁူႉၵူၺ်းဝႃႈ မၼ်းႁဵတ်းၸွမ်း Protocol ၵေႃႈယဝ်ႉယဝ်ႉ။
+2.  **Flexibility:** ႁဝ်းၸၢင်ႈလႅၵ်ႈလၢႆႈ "Helper" (Delegate) လႆႈၵူႈၶၢဝ်း လူၺ်ႈဢမ်ႇလူဝ်ႇမႄး Code ၼႂ်း "Boss" (Engine) ယဝ်ႉ။
+3.  **Safety:** ၸွႆးႁႂ်ႈၵၢၼ်သူင်ႇၶေႃႈမုၼ်း မႅၼ်ႈၸွမ်းပိူင် လႄႈ ၵူတ်ႇထတ်း Error လႆႈငၢႆႈယဝ်ႉ။
 
 ---
