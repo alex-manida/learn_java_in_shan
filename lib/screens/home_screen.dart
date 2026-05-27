@@ -12,8 +12,6 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
   Map<String, dynamic> _getLanguageStyle(String lang) {
     switch (lang.toLowerCase().trim()) {
-
-    // --- JAVA ECOSYSTEM ---
       case 'java':
       case 'javafx':
         return {
@@ -25,9 +23,7 @@ class HomeScreen extends StatelessWidget {
           'color': const Color(0xFF6DB33F), // Official Spring Boot Leaf Green
           'icon': SimpleIcons.springboot,
         };
-
-    // --- APPLE ECOSYSTEM ---
-      case 'swift':
+        case 'swift':
       case 'swift_ui':
         return {
           'color': const Color(0xFFF05138), // Official Swift Flame Orange
@@ -98,7 +94,7 @@ class HomeScreen extends StatelessWidget {
       case 'css':
         return {
           'color': const Color(0xFF1572B6), // Official CSS3 Blue
-          'icon': SimpleIcons.css3,
+          'icon': SimpleIcons.css,
         };
       case 'js':
       case 'javascript':
