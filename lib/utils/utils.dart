@@ -8,7 +8,9 @@ import 'package:tmkacademy/languages/lang_git.dart';
 import 'package:tmkacademy/languages/lang_haskell.dart';
 import 'package:tmkacademy/languages/lang_ios_keyboard.dart';
 import 'package:tmkacademy/languages/lang_java_springboot.dart';
+import 'package:tmkacademy/languages/lang_java_swing.dart';
 import 'package:tmkacademy/languages/lang_javafx.dart';
+import 'package:tmkacademy/languages/lang_pygame.dart';
 import 'package:tmkacademy/languages/lang_swift.dart';
 import 'package:tmkacademy/languages/lang_swift_ui.dart';
 import 'package:tmkacademy/languages/lang_ts.dart';
@@ -52,6 +54,8 @@ const Map<String, Map<int, String>> topics = {
   "android_keyboard": akTopics,
   "ios_keyboard": iosKeyboardTopics,
   "android_keyboard_jc": akjcTopics,
+  "java_swing": javaSwingTopics,
+  "pygame": pygameTopics,
 };
 
 const Map<String, Map<int, Map<int, String>>> modules = {
@@ -79,7 +83,9 @@ const Map<String, Map<int, Map<int, String>>> modules = {
   "jetpack_compose": jetpackComposeModules,
   "android_keyboard": akModules,
   "ios_keyboard": iosKeyboardModules,
-  "android_keyboard_jc": akjcModules
+  "android_keyboard_jc": akjcModules,
+  "java_swing": javaSwingModules,
+  "pygame": pygameModules,
 };
 
 final Map<String, Map<int, Lesson>> lessons = {
@@ -108,6 +114,8 @@ final Map<String, Map<int, Lesson>> lessons = {
   "android_keyboard": akLessons,
   "ios_keyboard": iosKeyboardLessons,
   "android_keyboard_jc": akjcLessons,
+  "java_swing": javaSwingLessons,
+  "pygame": pygameLessons
 };
 
 class Lesson {
